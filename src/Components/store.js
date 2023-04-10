@@ -30,7 +30,7 @@ class Store extends React.Component {
 
     onTestClick() {
         this.setState({
-            ...this.state,
+            this.state,
             selectedCategory: this.getCategoryObject("PC Components")
         });
     }
@@ -38,7 +38,7 @@ class Store extends React.Component {
     onCategorySelect(e) {
         let categoryName = e.target.value;
         this.setState({
-            ...this.state,
+            this.state,
             selectedCategory: this.getCategoryObject(categoryName)
         });
     }
